@@ -39,9 +39,8 @@ final class PanelController {
     init(store: Store, openSettings: @escaping () -> Void) {
         self.store = store
         panel = FloatingPanel(contentRect: NSRect(x: 0, y: 0, width: 340, height: 300))
-        weak let weakStore = store
         let root = PanelView(openSettings: openSettings,
-                             hidePanel: { weakStore?.panelVisible = false })
+                             hidePanel: { [weak store] in store?.panelVisible = false })
             .environmentObject(store)
         panel.contentView = NSHostingView(rootView: root)
 
