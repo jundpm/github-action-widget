@@ -1,0 +1,27 @@
+name: Feature request / 기능 제안
+description: An idea to make the widget more useful. / 위젯을 더 쓸모 있게 만들 아이디어
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem would this solve? / 어떤 불편을 해결하나요?
+      description: Describe the situation, not just the solution. / 해결책보다 상황을 먼저 적어주세요.
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: Your idea / 제안하는 방식
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives you considered / 생각해 본 다른 방법
+  - type: checkboxes
+    id: contribute
+    attributes:
+      label: Contribution / 기여 의사
+      options:
+        - label: I'd like to implement this myself / 직접 구현해 보고 싶어요

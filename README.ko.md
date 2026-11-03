@@ -89,6 +89,10 @@ defaults delete io.github.jundpm.github-action-widget
   `xattr -dr com.apple.quarantine ~/Applications/"GitHub Action Widget.app"` 를 실행하세요.
 - 이 프로젝트는 GitHub, Inc. 와 무관한 개인 비공식 프로젝트입니다. GitHub 및 GitHub 로고는 GitHub, Inc. 의 상표입니다.
 
+## 기여하기
+
+이슈와 PR 모두 환영해요 — [CONTRIBUTING.md](CONTRIBUTING.md) 를 참고하세요.
+
 ## 라이선스
 
 [MIT](LICENSE)

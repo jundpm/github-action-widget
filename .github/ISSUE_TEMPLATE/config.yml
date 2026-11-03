@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Installation help / 설치 도움말
+    url: https://github.com/jundpm/github-action-widget#install
+    about: Check the install section and troubleshooting in AGENTS.md first. / 먼저 README 설치 절과 AGENTS.md 문제 해결을 확인해 주세요.

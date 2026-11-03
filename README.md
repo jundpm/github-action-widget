@@ -95,6 +95,10 @@ defaults delete io.github.jundpm.github-action-widget
 - This is an independent, unofficial project. It is not affiliated with, endorsed by or sponsored by GitHub, Inc.
   GitHub and the GitHub logo are trademarks of GitHub, Inc.
 
+## Contributing
+
+Issues and pull requests are welcome — see [CONTRIBUTING.md](CONTRIBUTING.md).
+
 ## License
 
 [MIT](LICENSE)

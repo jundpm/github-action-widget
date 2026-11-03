@@ -1,0 +1,55 @@
+name: Bug report / 버그 제보
+description: Something doesn't work as expected. / 기대와 다르게 동작해요.
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened? / 무슨 일이 있었나요?
+      description: What did you expect, and what happened instead? / 기대한 동작과 실제 동작
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce / 재현 방법
+      placeholder: |
+        1. Watch repo owner/name
+        2. Push a commit
+        3. ...
+    validations:
+      required: true
+  - type: input
+    id: app-version
+    attributes:
+      label: App version / 앱 버전
+      description: Finder › GitHub Action Widget.app › Get Info, or the release tag
+      placeholder: v0.1.0
+    validations:
+      required: true
+  - type: input
+    id: macos
+    attributes:
+      label: macOS version and Mac / macOS 버전과 기종
+      placeholder: macOS 15.3, Apple Silicon
+    validations:
+      required: true
+  - type: dropdown
+    id: install
+    attributes:
+      label: How did you install it? / 설치 방법
+      options:
+        - One-line installer (install.sh)
+        - AI agent (Claude Code, Codex, …)
+        - Built from source
+        - Downloaded the zip manually
+    validations:
+      required: true
+  - type: textarea
+    id: extra
+    attributes:
+      label: Screenshots or logs / 스크린샷·로그
+      description: |
+        Optional. Output of `GitHubActionWidget --check owner/repo` helps for data issues:
+        `~/Applications/"GitHub Action Widget.app"/Contents/MacOS/GitHubActionWidget --check owner/repo`
+        Please don't paste tokens.
